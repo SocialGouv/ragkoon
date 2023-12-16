@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ragkoon"
+version = "0.1.0"
+description = ""
+authors = ["Matéo Mévollon <m.mevollon@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.350"
+tiktoken = "^0.5.2"
+chromadb = "^0.4.20"
+openai = "^1.4.0"
+esprima = "^4.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
