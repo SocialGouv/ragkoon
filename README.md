@@ -18,6 +18,18 @@ Peu importe le modèle utilisé pour la génération, une clé OpenAI est néces
 pour créer les embeddings. Régler la variable d'environnement `OPENAI_API_KEY`
 dans `./.env`.
 
+### Pré-requis
+
+- pyenv
+- python >= 3.11.2
+- poetry >= 1.7.1
+
+```sh
+pyenv install 3.11.2
+pyenv use 3.11.2
+poetry env use $(which python)
+```
+
 ## Préparation
 
 Alimenter un repo d'exemple dans le répertoire `./repo`

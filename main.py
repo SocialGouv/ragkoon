@@ -1,3 +1,4 @@
+import os
 import dotenv
 
 from langchain.document_loaders.generic import GenericLoader
@@ -13,7 +14,7 @@ from langchain.chat_models import ChatOpenAI, ChatOllama
 
 dotenv.load_dotenv(".env")
 
-repo_path = "./repo"
+repo_path = os.getenv('REPO', './repo')
 
 loader = GenericLoader.from_filesystem(
     repo_path,
