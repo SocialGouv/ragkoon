@@ -1,3 +1,4 @@
+import os
 import dotenv
 
 from langchain.document_loaders.generic import GenericLoader
